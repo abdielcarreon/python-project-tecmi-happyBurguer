@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+</head>
+<body>
+    <h1>Order Details</h1>
+    {% if order %}
+    <p>Order ID: {{ order[0] }}</p>
+    <p>Client: {{ order[1] }}</p>
+    <p>Product: {{ order[2] }}</p>
+    <p>Price: {{ order[3] }}</p>
+    {% else %}
+    <p>Order not found</p>
+    {% endif %}
+</body>
+</html>
